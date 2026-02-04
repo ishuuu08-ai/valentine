@@ -132,9 +132,9 @@ document.getElementById("s3").style.left=n==3?"0":"100%";
 }
 
 function love(){
-document.getElementById("msg").innerHTML="I Love You Baby Cutie Babuu mera bachuu❤️😘";
+document.getElementById("msg").innerHTML="I Love You Baby Cutie Babuu & Bhavay ❤️💋";
 
-for(let i=0;i<40;i++){
+for(let i=0;i<35;i++){
 let h=document.createElement("div");
 h.className="heart";
 h.innerHTML="❤️💋";
@@ -142,9 +142,26 @@ h.style.left=Math.random()*100+"%";
 document.body.appendChild(h);
 setTimeout(()=>h.remove(),5000);
 }
+
+/* Elephant */
+for(let i=0;i<3;i++){
+let e=document.createElement("img");
+e.src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif";
+e.className="gif";
+e.style.left=Math.random()*80+"%";
+document.body.appendChild(e);
+}
+
+/* Monkey */
+for(let i=0;i<3;i++){
+let m=document.createElement("img");
+m.src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif";
+m.className="gif";
+m.style.left=Math.random()*80+"%";
+document.body.appendChild(m);
+}
 }
 </script>
 
 </body>
 </html>
-
