@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bhavay babu💖</title>
+
+<style>
+body{
+margin:0;
+font-family: 'Segoe UI', sans-serif;
+background:#ffb6c1;
+overflow:hidden;
+}
+
+.slide{
+width:100vw;
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+position:absolute;
+transition:0.8s;
+}
+
+h1{color:#fff;font-size:36px;}
+p{color:white;font-size:18px;max-width:500px;}
+
+.card{
+background:rgba(255,255,255,0.25);
+padding:25px;
+border-radius:20px;
+margin:15px;
+}
+
+button{
+padding:12px 25px;
+border:none;
+border-radius:25px;
+background:#ff3366;
+color:white;
+font-size:18px;
+cursor:pointer;
+}
+
+.heart{
+position:fixed;
+bottom:-10px;
+font-size:20px;
+animation:float 5s infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0);opacity:1;}
+100%{transform:translateY(-100vh);opacity:0;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- SLIDE 1 -->
+<div class="slide" id="s1">
+<h1>Hii Baby Bhavay jii 💖😘</h1>
+
+<div class="card">
+<p>
+You are my world 🌍❤️<br>
+You are the cutest 🥹💋<br>
+You are the best boyfriend ever 🫶💞<br><br>
+
+Tum muskurate ho to dil pighal jata hai 💗<br>
+Tum paas aate ho to sab kuch bhool jata hai 😘<br>
+Meri har khushi tumse shuru hoti hai ❤️‍🔥
+kyuki tu mere dil mei bas jata hai
+</p>
+</div>
+
+<button onclick="next(2)">Next ➡️</button>
+</div>
+
+<!-- SLIDE 2 -->
+<div class="slide" id="s2" style="left:100%;">
+<h1>For My Baby 💕🤲</h1>
+
+<div class="card">
+<p>
+I’m sorry for all the fights 🥺🤍<br>
+I’m sorry for every little misunderstanding 💞<br>
+Ab jyada bann mat🤲❤️<br><br>
+
+Tum Google ho kya?<br>
+Kyuki jo main dhundhti hoon… sab tum mein mil jata hai hehehe😌💋<br><br>
+
+Are you magic? ✨<br>
+Because whenever you come, my mood becomes happy 😘❤️
+</p>
+</div>
+
+<button onclick="next(3)">Next ➡️</button>
+</div>
+
+<!-- SLIDE 3 -->
+<div class="slide" id="s3" style="left:200%;">
+<h1>Forever Us 💍❤️</h1>
+
+<div class="card">
+<p>
+You are my peace 🫶<br>
+You are my home 🏠❤️<br>
+You are my everything 💕<br><br>
+
+Chahe duniya idhar se udhar ho jaye,<br>
+Main hamesha tumhari hi rahungi 💞<br><br>
+
+Baby Cutie Babuu & Bhavay — always together 😘🤲❤️
+</p>
+</div>
+
+<button onclick="love()">Click For Surprise 💝</button>
+<h2 id="msg" style="color:white;"></h2>
+</div>
+
+<script>
+function next(n){
+document.getElementById("s1").style.left="-100%";
+document.getElementById("s2").style.left=n==2?"0":"-100%";
+document.getElementById("s3").style.left=n==3?"0":"100%";
+}
+
+function love(){
+document.getElementById("msg").innerHTML="I Love You Baby Cutie Babuu mera bachuu❤️😘";
+
+for(let i=0;i<40;i++){
+let h=document.createElement("div");
+h.className="heart";
+h.innerHTML="❤️💋";
+h.style.left=Math.random()*100+"%";
+document.body.appendChild(h);
+setTimeout(()=>h.remove(),5000);
+}
+}
+</script>
+
+</body>
+</html>
